@@ -18,7 +18,7 @@ public class Stack {
         if (isEmptyS()){
             this.top = newNode;
         }else {
-            this.top.next = newNode;
+            newNode.next = this.top;
             this.top = newNode;
         }
     }
